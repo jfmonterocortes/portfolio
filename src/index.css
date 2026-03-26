@@ -1,16 +1,9 @@
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400;1,700&family=IBM+Plex+Mono:ital,wght@0,400;0,500;1,400&family=Crimson+Pro:ital,wght@0,400;0,600;1,400&display=swap');
 @import "tailwindcss";
 
 @theme {
-  --color-accent: #B5451B;
-  --color-accent-light: #D9622F;
-  --color-cream: #F5F1E9;
-  --color-ink: #1A1714;
-  --color-muted: #8A7F75;
-  --color-rule: #D2CBBF;
-  --font-display: 'Playfair Display', Georgia, serif;
-  --font-body: 'Crimson Pro', Georgia, serif;
-  --font-mono: 'IBM Plex Mono', ui-monospace, Consolas, monospace;
+  --color-accent: #7c3aed;
+  --color-accent-light: #a78bfa;
+  --font-mono: ui-monospace, Consolas, "Cascadia Code", monospace;
 }
 
 @layer base {
@@ -22,6 +15,6 @@
   }
 
   body {
-    @apply bg-cream text-ink font-body dark:bg-[#120F0D] dark:text-[#EDE8DF];
+    @apply bg-white text-slate-700 dark:bg-slate-950 dark:text-slate-300;
   }
 }

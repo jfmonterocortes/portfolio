@@ -7,7 +7,6 @@ export const PROJECTS = [
     techStack: ['Node.js', 'Express', 'React', 'PostgreSQL', 'Prisma', 'JWT', 'Zod', 'Vitest'],
     repoUrl: 'https://github.com/jfmonterocortes/cattle-weighing-system',
     liveUrl: null,
-    impact: 'Deployed for a real cattle weighing business in Colombia — tracking live transactions, payments, and multi-role access across the entire operation.',
     screenshots: [
       '/projects/cattle-weighing/dashboard-overview.png',
       '/projects/cattle-weighing/planillas-list-and-filters.png',
@@ -86,7 +85,6 @@ export const PROJECTS = [
     techStack: ['Python', 'OpenAI API', 'Pydantic', 'Streamlit', 'LaTeX', 'python-docx', 'Notion API'],
     repoUrl: 'https://github.com/jfmonterocortes/coop-application-agent',
     liveUrl: null,
-    impact: 'An AI pipeline that reads a job posting, generates a scored application, and iterates until quality is good enough — not just until it\'s done.',
     screenshots: [],
     screenshotLabels: [],
     architecture: [
@@ -146,7 +144,6 @@ export const PROJECTS = [
     techStack: ['.NET 8', 'ASP.NET Core', 'C#', 'Razor MVC', 'Minimal API'],
     repoUrl: 'https://github.com/jfmonterocortes/TaskTrackerAPI',
     liveUrl: null,
-    impact: 'A proper two-app .NET 8 system: Razor MVC frontend calling a standalone minimal API, with versioned routes and config-driven integration.',
     screenshots: [
       '/projects/task-tracker/task-list.png',
       '/projects/task-tracker/create-task.png',
@@ -210,7 +207,6 @@ app.MapPatch("/api/v1/tasks/{id}/assign",
     techStack: ['C#', '.NET 8', '.NET Framework 4.7.2', 'WPF', 'TCP Sockets', 'Windows Service'],
     repoUrl: 'https://github.com/jfmonterocortes/MessagingApp',
     liveUrl: null,
-    impact: 'Real-time WPF messaging over raw TCP sockets — no frameworks between the app and the network. Custom protocol, Windows Service host.',
     screenshots: [
       '/projects/messaging-app/client-main-window.png',
       '/projects/messaging-app/client-message-flow.png',
@@ -284,7 +280,6 @@ app.MapPatch("/api/v1/tasks/{id}/assign",
     techStack: ['C', 'Data Structures', 'Visual Studio'],
     repoUrl: 'https://github.com/jfmonterocortes/restaurant-management-system',
     liveUrl: null,
-    impact: 'Full restaurant operations modeled in C with no standard library containers — hash table, circular list, and FIFO queue built from scratch.',
     screenshots: [
       '/projects/restaurant/screenshot-main-menu.png',
       '/projects/restaurant/screenshot-invalid-text-input.png',
