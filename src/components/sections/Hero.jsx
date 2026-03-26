@@ -34,7 +34,7 @@ export function Hero() {
             Montero Cortes
           </h1>
           <p className="text-slate-600 dark:text-slate-400 text-lg mb-8 leading-relaxed">
-            I build production-quality systems with clean architecture — not just tutorials.
+            I build production-quality systems with clean architecture - not just tutorials.
           </p>
           <div className="flex flex-wrap gap-3">
             <a

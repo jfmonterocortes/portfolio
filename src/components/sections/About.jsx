@@ -10,17 +10,18 @@ export function About() {
           <div className="grid md:grid-cols-3 gap-8">
             <div className="md:col-span-2 space-y-4 text-slate-600 dark:text-slate-400 leading-relaxed">
               <p>
-                I'm a Software Engineering Technology student at Conestoga College, focused on backend
-                development, API design, and systems programming. I enjoy building software that solves
-                real problems — from cattle weighing management systems to AI-powered job application tools.
+                Software Engineering Technology student at Conestoga College. I build backend systems
+                that handle real business logic - role-based access, transactional writes, custom
+                network protocols, and AI-driven pipelines.
               </p>
               <p>
-                My projects span C, C#/.NET, Node.js, React, and Python. I care about clean architecture,
-                transactional consistency, and writing code that's understandable six months later.
+                My projects aren't tutorials. One runs in a real cattle weighing business in Colombia.
+                Another uses OpenAI to generate job applications with iterative refinement until a
+                quality threshold is met. I've shipped across C, C#, Node.js, React, and Python.
               </p>
               <p>
-                Currently seeking co-op opportunities where I can contribute to meaningful backend systems
-                and keep learning from experienced engineers.
+                Looking for a co-op where I can contribute to production systems and work with
+                engineers who care about correctness.
               </p>
             </div>
             <div className="space-y-4">
@@ -34,7 +35,7 @@ export function About() {
               <div className="flex items-start gap-3">
                 <MapPin size={20} className="text-violet-500 mt-0.5 shrink-0" />
                 <div>
-                  <div className="text-sm font-medium text-slate-900 dark:text-white">Waterloo, Ontario</div>
+                  <div className="text-sm font-medium text-slate-900 dark:text-white">Kitchener, Ontario</div>
                   <div className="text-sm text-slate-500 dark:text-slate-400">Open to co-op</div>
                 </div>
               </div>

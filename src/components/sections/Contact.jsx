@@ -56,13 +56,13 @@ export function Contact() {
           <ScrollReveal>
             <div className="space-y-4">
               <a
-                href="mailto:j.monterocortes@gmail.com"
+                href="mailto:jf.monterocortes@gmail.com"
                 className="flex items-center gap-3 p-4 rounded-xl border border-slate-200 dark:border-slate-700 bg-white dark:bg-slate-800 hover:border-violet-400 dark:hover:border-violet-600 transition-colors group"
               >
                 <Mail size={20} className="text-violet-500" />
                 <div>
                   <div className="text-sm font-medium text-slate-900 dark:text-white">Email</div>
-                  <div className="text-xs text-slate-500 dark:text-slate-400">j.monterocortes@gmail.com</div>
+                  <div className="text-xs text-slate-500 dark:text-slate-400">jf.monterocortes@gmail.com</div>
                 </div>
               </a>
               <a

@@ -4,7 +4,7 @@ const LINES = [
   { prompt: '$ whoami', output: 'Juan Felipe Montero Cortes' },
   { prompt: '$ cat focus.txt', output: 'Backend · APIs · Systems · Databases' },
   { prompt: '$ ls projects/ | wc -l', output: '5 production-quality projects' },
-  { prompt: '$ echo $status', output: 'Open to co-op — Waterloo, ON' },
+  { prompt: '$ echo $status', output: 'Open to co-op - Waterloo, ON' },
 ];
 
 export function TerminalTyper() {

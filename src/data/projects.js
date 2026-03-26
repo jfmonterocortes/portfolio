@@ -2,7 +2,7 @@ export const PROJECTS = [
   {
     slug: 'cattle-weighing-system',
     title: 'Bascula La Esperanza',
-    tagline: 'Full-stack cattle weighing system with RBAC, audit logs, and export.',
+    tagline: 'Built for a real cattle weighing business in Colombia. Tracks transactions, payments, and users across three roles with a full audit trail.',
     category: 'FULLSTACK',
     techStack: ['Node.js', 'Express', 'React', 'PostgreSQL', 'Prisma', 'JWT', 'Zod', 'Vitest'],
     repoUrl: 'https://github.com/jfmonterocortes/cattle-weighing-system',
@@ -50,7 +50,7 @@ export const PROJECTS = [
       {
         icon: 'file-text',
         title: 'Audit logging',
-        body: '16 action types tracked on best-effort — never allowed to turn a committed write into a 500.',
+        body: '16 action types tracked on best-effort - never allowed to turn a committed write into a 500.',
       },
     ],
     stats: ['14 test files', '3 user roles', 'JWT auth', 'PDF + Excel export', 'Audit logging'],
@@ -80,7 +80,7 @@ export const PROJECTS = [
   {
     slug: 'coop-application-agent',
     title: 'Co-op Application Agent',
-    tagline: 'AI pipeline that generates tailored co-op packages with iterative refinement.',
+    tagline: 'Generates a targeted resume PDF, cover letter, and interview prep from a job posting. Scores the output, refines it up to 3 times, then syncs to Notion.',
     category: 'TOOLS',
     techStack: ['Python', 'OpenAI API', 'Pydantic', 'Streamlit', 'LaTeX', 'python-docx', 'Notion API'],
     repoUrl: 'https://github.com/jfmonterocortes/coop-application-agent',
@@ -116,7 +116,7 @@ export const PROJECTS = [
       {
         icon: 'maximize-2',
         title: 'Deterministic page-fit',
-        body: 'Resume is compressed progressively until it fits one page — no manual tweaking of margins or font sizes.',
+        body: 'Resume is compressed progressively until it fits one page - no manual tweaking of margins or font sizes.',
       },
     ],
     stats: ['10-step pipeline', 'Pydantic validation', 'LaTeX PDF output', 'Notion API sync', 'Batch mode'],
@@ -139,7 +139,7 @@ export const PROJECTS = [
   {
     slug: 'task-tracker-api',
     title: 'TaskTrackerAPI',
-    tagline: 'ASP.NET Core MVC + Minimal API with versioned routes, health checks, and request logging.',
+    tagline: 'Two-app .NET system: a Razor MVC frontend consuming a standalone minimal API. Versioned routes, health checks, and config-driven integration.',
     category: 'BACKEND',
     techStack: ['.NET 8', 'ASP.NET Core', 'C#', 'Razor MVC', 'Minimal API'],
     repoUrl: 'https://github.com/jfmonterocortes/TaskTrackerAPI',
@@ -170,7 +170,7 @@ export const PROJECTS = [
       {
         icon: 'settings',
         title: 'Config-driven integration',
-        body: 'Frontend API base URL is read from appsettings.json instead of hardcoded in views — one config change to point at any environment.',
+        body: 'Frontend API base URL is read from appsettings.json instead of hardcoded in views - one config change to point at any environment.',
       },
       {
         icon: 'activity',
@@ -202,7 +202,7 @@ app.MapPatch("/api/v1/tasks/{id}/assign",
   {
     slug: 'messaging-app',
     title: 'MessagingApp',
-    tagline: 'C# WPF client + Windows Service TCP server with a custom text protocol.',
+    tagline: 'Two users exchange messages over a custom TCP protocol. No web stack - a WPF desktop client talking to a Windows Service over raw sockets.',
     category: 'SYSTEMS',
     techStack: ['C#', '.NET 8', '.NET Framework 4.7.2', 'WPF', 'TCP Sockets', 'Windows Service'],
     repoUrl: 'https://github.com/jfmonterocortes/MessagingApp',
@@ -275,7 +275,7 @@ app.MapPatch("/api/v1/tasks/{id}/assign",
   {
     slug: 'restaurant-management-system',
     title: 'Restaurant Management System',
-    tagline: 'C console app demonstrating hash tables, circular linked lists, and FIFO queues.',
+    tagline: 'Models restaurant operations in C with no standard library containers - hash table for menu lookup, circular list for tables, queue for FIFO order processing.',
     category: 'SYSTEMS',
     techStack: ['C', 'Data Structures', 'Visual Studio'],
     repoUrl: 'https://github.com/jfmonterocortes/restaurant-management-system',
@@ -308,12 +308,12 @@ app.MapPatch("/api/v1/tasks/{id}/assign",
       {
         icon: 'lock',
         title: 'Status-gated billing',
-        body: 'Bills can only be generated after orders are processed — invalid state transitions are blocked at the data layer.',
+        body: 'Bills can only be generated after orders are processed - invalid state transitions are blocked at the data layer.',
       },
       {
         icon: 'trash-2',
         title: 'Explicit memory management',
-        body: 'Every malloc has a paired free. Demonstrates ownership and lifecycle discipline — not just "it works until it leaks".',
+        body: 'Every malloc has a paired free. Demonstrates ownership and lifecycle discipline - not just "it works until it leaks".',
       },
     ],
     stats: ['Hash table', 'Circular linked list', 'FIFO queue', 'Explicit malloc/free'],

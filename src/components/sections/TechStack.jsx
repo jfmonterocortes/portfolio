@@ -2,19 +2,21 @@ import { useState, useEffect } from 'react';
 import { ScrollReveal } from '../ui/ScrollReveal';
 import { getSkills } from '../../services/api';
 
-const CATEGORY_ORDER = ['LANGUAGE', 'FRAMEWORK', 'DATABASE', 'TOOL'];
+const CATEGORY_ORDER = ['LANGUAGE', 'FRAMEWORK', 'DATABASE', 'TOOL', 'CONCEPT'];
 const CATEGORY_LABELS = {
   LANGUAGE: 'Languages',
   FRAMEWORK: 'Frameworks & Runtimes',
   DATABASE: 'Databases & ORM',
-  TOOL: 'Tools',
+  TOOL: 'Tools & Platforms',
+  CONCEPT: 'Concepts & Technologies',
 };
 
 const FALLBACK_SKILLS = {
   LANGUAGE: ['C', 'C#', 'JavaScript', 'Python', 'SQL'],
   FRAMEWORK: ['Node.js', 'Express', '.NET 8', 'ASP.NET Core', 'React', 'WPF', 'Tailwind CSS'],
   DATABASE: ['PostgreSQL', 'SQL Server', 'Prisma ORM'],
-  TOOL: ['Git', 'Azure DevOps', 'Vitest', 'Zod', 'Pydantic'],
+  TOOL: ['Git', 'Azure DevOps', 'GitHub Actions', 'Docker', 'Postman', 'Vercel', 'Render'],
+  CONCEPT: ['REST APIs', 'MVC Architecture', 'Layered Architecture', 'TCP/IP', 'Socket Programming', 'Client-Server Systems', 'JWT Authentication', 'Input Validation', 'Unit Testing', 'Integration Testing'],
 };
 
 export function TechStack() {
@@ -35,10 +37,10 @@ export function TechStack() {
         <ScrollReveal>
           <h2 className="text-3xl font-bold text-slate-900 dark:text-white mb-12">Tech Stack</h2>
         </ScrollReveal>
-        <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
+        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
           {CATEGORY_ORDER.map((cat, i) => (
-            <ScrollReveal key={cat} delay={i * 0.1}>
-              <div className="bg-white dark:bg-slate-800 rounded-xl p-5 border border-slate-200 dark:border-slate-700">
+            <ScrollReveal key={cat} delay={i * 0.08}>
+              <div className="bg-white dark:bg-slate-800 rounded-xl p-5 border border-slate-200 dark:border-slate-700 h-full">
                 <h3 className="text-xs font-semibold uppercase tracking-widest text-violet-600 dark:text-violet-400 mb-4">
                   {CATEGORY_LABELS[cat]}
                 </h3>
