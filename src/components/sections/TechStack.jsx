@@ -32,28 +32,33 @@ export function TechStack() {
   const data = error || !skills ? FALLBACK_SKILLS : skills;
 
   return (
-    <section id="stack" className="py-24 bg-slate-50 dark:bg-slate-900/50">
+    <section id="stack" className="py-24 bg-[#EDE8DE] dark:bg-[#0D0B09]">
       <div className="max-w-5xl mx-auto px-6">
         <ScrollReveal>
-          <h2 className="text-3xl font-bold text-slate-900 dark:text-white mb-12">Tech Stack</h2>
+          <div className="mb-10">
+            <p className="font-mono text-xs tracking-[0.2em] uppercase text-muted dark:text-[#6B6055] mb-3">
+              02 / Stack
+            </p>
+            <div className="h-px bg-rule dark:bg-[#2A2420]" />
+          </div>
         </ScrollReveal>
-        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div className="space-y-0">
           {CATEGORY_ORDER.map((cat, i) => (
-            <ScrollReveal key={cat} delay={i * 0.08}>
-              <div className="bg-white dark:bg-slate-800 rounded-xl p-5 border border-slate-200 dark:border-slate-700 h-full">
-                <h3 className="text-xs font-semibold uppercase tracking-widest text-violet-600 dark:text-violet-400 mb-4">
+            <ScrollReveal key={cat} delay={i * 0.06}>
+              <div className="grid md:grid-cols-4 gap-4 items-baseline py-6 border-b border-rule dark:border-[#2A2420] last:border-0">
+                <p className="font-mono text-xs tracking-widest uppercase text-muted dark:text-[#6B6055]">
                   {CATEGORY_LABELS[cat]}
-                </h3>
-                <ul className="space-y-2">
+                </p>
+                <div className="md:col-span-3 flex flex-wrap gap-x-5 gap-y-1">
                   {(data[cat] || []).map((skill) => (
-                    <li
+                    <span
                       key={typeof skill === 'string' ? skill : skill.name}
-                      className="text-sm text-slate-700 dark:text-slate-300"
+                      className="font-body text-base text-ink dark:text-[#B5AFA6]"
                     >
                       {typeof skill === 'string' ? skill : skill.name}
-                    </li>
+                    </span>
                   ))}
-                </ul>
+                </div>
               </div>
             </ScrollReveal>
           ))}

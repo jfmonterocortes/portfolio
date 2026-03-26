@@ -1,17 +1,21 @@
 import { ScrollReveal } from '../ui/ScrollReveal';
-import { MapPin, GraduationCap } from 'lucide-react';
 
 export function About() {
   return (
     <section id="about" className="py-24">
       <div className="max-w-5xl mx-auto px-6">
         <ScrollReveal>
-          <h2 className="text-3xl font-bold text-slate-900 dark:text-white mb-8">About</h2>
-          <div className="grid md:grid-cols-3 gap-8">
-            <div className="md:col-span-2 space-y-4 text-slate-600 dark:text-slate-400 leading-relaxed">
+          <div className="mb-10">
+            <p className="font-mono text-xs tracking-[0.2em] uppercase text-muted dark:text-[#6B6055] mb-3">
+              01 / About
+            </p>
+            <div className="h-px bg-rule dark:bg-[#2A2420]" />
+          </div>
+          <div className="grid md:grid-cols-3 gap-10">
+            <div className="md:col-span-2 space-y-5 text-ink/80 dark:text-[#B5AFA6] leading-relaxed text-lg">
               <p>
                 Software Engineering Technology student at Conestoga College. I build backend systems
-                that handle real business logic - role-based access, transactional writes, custom
+                that handle real business logic — role-based access, transactional writes, custom
                 network protocols, and AI-driven pipelines.
               </p>
               <p>
@@ -24,20 +28,29 @@ export function About() {
                 engineers who care about correctness.
               </p>
             </div>
-            <div className="space-y-4">
-              <div className="flex items-start gap-3">
-                <GraduationCap size={20} className="text-violet-500 mt-0.5 shrink-0" />
-                <div>
-                  <div className="text-sm font-medium text-slate-900 dark:text-white">Conestoga College</div>
-                  <div className="text-sm text-slate-500 dark:text-slate-400">Software Engineering Technology</div>
-                </div>
+            <div className="space-y-6 pt-1">
+              <div>
+                <p className="font-mono text-xs tracking-widest uppercase text-muted dark:text-[#6B6055] mb-1">
+                  Education
+                </p>
+                <p className="font-body text-base font-semibold text-ink dark:text-[#EDE8DF]">
+                  Conestoga College
+                </p>
+                <p className="font-body text-sm text-muted dark:text-[#6B6055]">
+                  Software Engineering Technology
+                </p>
               </div>
-              <div className="flex items-start gap-3">
-                <MapPin size={20} className="text-violet-500 mt-0.5 shrink-0" />
-                <div>
-                  <div className="text-sm font-medium text-slate-900 dark:text-white">Kitchener, Ontario</div>
-                  <div className="text-sm text-slate-500 dark:text-slate-400">Open to co-op</div>
-                </div>
+              <div className="h-px bg-rule dark:bg-[#2A2420]" />
+              <div>
+                <p className="font-mono text-xs tracking-widest uppercase text-muted dark:text-[#6B6055] mb-1">
+                  Location
+                </p>
+                <p className="font-body text-base font-semibold text-ink dark:text-[#EDE8DF]">
+                  Kitchener, Ontario
+                </p>
+                <p className="font-body text-sm text-muted dark:text-[#6B6055]">
+                  Open to co-op
+                </p>
               </div>
             </div>
           </div>

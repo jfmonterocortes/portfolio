@@ -1,12 +1,12 @@
 export function StatBar({ stats }) {
   return (
-    <div className="flex flex-wrap gap-2 mt-4">
-      {stats.map((stat) => (
-        <span
-          key={stat}
-          className="text-xs px-3 py-1 rounded-full bg-slate-100 dark:bg-slate-800 text-slate-600 dark:text-slate-400 font-medium"
-        >
-          {stat}
+    <div className="flex flex-wrap items-center gap-x-3 gap-y-1 mt-4">
+      {stats.map((stat, i) => (
+        <span key={stat} className="flex items-center gap-3">
+          <span className="font-mono text-xs text-muted dark:text-[#6B6055]">{stat}</span>
+          {i < stats.length - 1 && (
+            <span className="font-mono text-xs text-rule dark:text-[#2A2420]">·</span>
+          )}
         </span>
       ))}
     </div>

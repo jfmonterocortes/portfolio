@@ -5,9 +5,9 @@ export function ThemeToggle({ dark, toggle }) {
     <button
       onClick={toggle}
       aria-label="Toggle theme"
-      className="p-2 rounded-md text-slate-500 hover:text-slate-700 dark:text-slate-400 dark:hover:text-slate-200 hover:bg-slate-100 dark:hover:bg-slate-800 transition-colors"
+      className="p-2 ml-1 text-muted dark:text-[#6B6055] hover:text-ink dark:hover:text-[#EDE8DF] transition-colors"
     >
-      {dark ? <Sun size={18} /> : <Moon size={18} />}
+      {dark ? <Sun size={16} /> : <Moon size={16} />}
     </button>
   );
 }
