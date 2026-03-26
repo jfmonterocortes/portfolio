@@ -10,12 +10,25 @@ export function ScreenshotCarousel({ screenshots, labels }) {
   const next = () => setIndex((i) => (i === screenshots.length - 1 ? 0 : i + 1));
 
   return (
-    <div className="rounded-xl overflow-hidden border border-slate-200 dark:border-slate-700 bg-slate-100 dark:bg-slate-800">
-      <div className="relative aspect-video">
+    <div className="rounded-xl overflow-hidden border border-slate-200 dark:border-slate-700 shadow-lg">
+      {/* Browser chrome */}
+      <div className="bg-slate-100 dark:bg-slate-800 border-b border-slate-200 dark:border-slate-700 px-4 py-2.5 flex items-center gap-3">
+        <div className="flex gap-1.5">
+          <span className="w-3 h-3 rounded-full bg-red-400" />
+          <span className="w-3 h-3 rounded-full bg-yellow-400" />
+          <span className="w-3 h-3 rounded-full bg-green-400" />
+        </div>
+        <div className="flex-1 bg-white dark:bg-slate-700 rounded-md px-3 py-1 text-xs text-slate-400 dark:text-slate-500 font-mono truncate">
+          {labels?.[index] ?? 'app'}
+        </div>
+      </div>
+
+      {/* Screenshot */}
+      <div className="relative bg-slate-50 dark:bg-slate-900">
         <img
           src={screenshots[index]}
           alt={labels?.[index] || `Screenshot ${index + 1}`}
-          className="w-full h-full object-cover"
+          className="w-full h-auto block"
         />
         {screenshots.length > 1 && (
           <>
@@ -34,24 +47,19 @@ export function ScreenshotCarousel({ screenshots, labels }) {
           </>
         )}
       </div>
-      {labels && (
-        <div className="px-4 py-2 border-t border-slate-200 dark:border-slate-700 flex items-center justify-between">
-          <span className="text-xs text-slate-500 dark:text-slate-400">{labels[index]}</span>
-          {screenshots.length > 1 && (
-            <div className="flex gap-1">
-              {screenshots.map((_, i) => (
-                <button
-                  key={i}
-                  onClick={() => setIndex(i)}
-                  className={`w-1.5 h-1.5 rounded-full transition-colors ${
-                    i === index
-                      ? 'bg-violet-500'
-                      : 'bg-slate-300 dark:bg-slate-600'
-                  }`}
-                />
-              ))}
-            </div>
-          )}
+
+      {/* Dots */}
+      {screenshots.length > 1 && (
+        <div className="bg-slate-100 dark:bg-slate-800 border-t border-slate-200 dark:border-slate-700 px-4 py-2 flex justify-center gap-1.5">
+          {screenshots.map((_, i) => (
+            <button
+              key={i}
+              onClick={() => setIndex(i)}
+              className={`w-1.5 h-1.5 rounded-full transition-colors ${
+                i === index ? 'bg-violet-500' : 'bg-slate-300 dark:bg-slate-600'
+              }`}
+            />
+          ))}
         </div>
       )}
     </div>
